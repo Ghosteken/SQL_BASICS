@@ -15,3 +15,7 @@ CREATE TABLE albums (
     PRIMARY KEY (id),
     FOREIGN KEY (band_id) REFERENCES bands_real(id)
 );
+
+DROP TABLE bands;
+
+INSERT INTO bands_real name
