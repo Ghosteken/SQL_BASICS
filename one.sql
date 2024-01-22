@@ -18,4 +18,20 @@ CREATE TABLE albums (
 
 DROP TABLE bands;
 
-INSERT INTO bands_real name
+-- for inserting values
+INSERT INTO bands_real (name)
+VALUES('BAND OF DEATH');
+
+INSERT INTO bands_real (name)
+VALUES('AVENGERS'),('WHITE ANGELS'),('bespoken');
+
+-- querying
+
+SELECT * FROM bands_real;
+
+SELECT * FROM bands_real LIMIT 2;
+
+-- only col
+SELECT name FROM bands_real;
+
+
