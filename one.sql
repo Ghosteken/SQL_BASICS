@@ -34,4 +34,18 @@ SELECT * FROM bands_real LIMIT 2;
 -- only col
 SELECT name FROM bands_real;
 
+SELECT id AS 'ID', name AS 'Band Name'
+FROM bands_real; 
+-- ordering
 
+SELECT * FROM bands_real ORDER BY name ASC;
+
+
+
+
+INSERT INTO albums (name, release_year, band_id)
+VALUES ('THE SOUND OF MUSIC',1980,1),
+		('DRILL OF HEARTS',2000,2),
+        ('Makebelive',1987,3),
+        ('Cursed rock',1959,4),
+        ('Alaive',1999,5);
