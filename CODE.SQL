@@ -9,6 +9,7 @@ FROM albums a
 JOIN DuplicateCTE d ON a.name = d.name AND a.release_year = d.release_year
 WHERE a.id NOT IN (
     SELECT MIN(id)
+    
     FROM albums
     GROUP BY name, release_year
 );
