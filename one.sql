@@ -40,6 +40,17 @@ FROM bands_real;
 
 SELECT * FROM bands_real ORDER BY name ASC;
 
+---------------------------------------------------
+
+-- Corrected data for inserting values
+INSERT INTO bands_real (name) VALUES ('BAND OF DEATH');
+INSERT INTO bands_real (name) VALUES ('AVENGERS'),('WHITE ANGELS'),('BESPOKEN'),('Spoked');
+
+-- Now you can insert albums with valid band_id values
+INSERT INTO albums (name, release_year, band_id) 
+VALUES ('THE SOUND OF MUSIC', 1980, 1),
+    ('DRILL OF HEARTS', 2000, 2),
+    ('Makebelive', 1987, 3);
 
 
 
@@ -49,3 +60,7 @@ VALUES ('THE SOUND OF MUSIC',1980,1),
         ('Makebelive',1987,3),
         ('Cursed rock',1959,4),
         ('Alaive',1999,5);
+        
+SELECT DISTINCT * FROM albums;         
+SELECT DISTINCT name FROM albums;
+
