@@ -29,6 +29,7 @@ VALUES('AVENGERS'),('WHITE ANGELS'),('bespoken');
 
 SELECT * FROM bands_real;
 
+
 SELECT * FROM bands_real LIMIT 2;
 
 -- only col
